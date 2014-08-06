@@ -1,0 +1,4 @@
+AngularBlankProject
+===================
+
+Blank AngularJS project
