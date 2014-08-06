@@ -1,0 +1,61 @@
+<!doctype html>
+<html ng-app="Sample" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Blank Sample Application</title>
+        <meta name="description" content="Sample">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body ng-controller="globalCtrl" >
+
+        <!-- Spinner -->
+        <div class="spinner-wrapper" ng-show="spinner || !loaded">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="page">
+            <!-- Content -->
+            <div id="main" ng-show="loaded" class="clearfix">
+                <section ng-view id="mainContent"></section>
+            </div>
+
+        </div>
+
+        <!-- Javascript Library (jQuery) -->
+        <script type="text/javascript" src="js/vendors/jquery/jquery.min.js"></script>
+
+        <!-- Javascript Framework (Angular 1.2.16) -->
+        <script type="text/javascript" src="js/vendors/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/vendors/angular/angular-route.js"></script>
+        <script type="text/javascript" src="js/vendors/angular/angular-animate.min.js"></script>
+        <script type="text/javascript" src="js/vendors/angular/angular-resource.min.js"></script>
+        <script type="text/javascript" src="js/vendors/angular/angular-sanitize.min.js"></script>
+
+        <!-- Javascript Library (Angular Strap 2.0.3) -->
+        <script type="text/javascript" src="js/vendors/angular-strap/angular-strap.js"></script>
+        <script type="text/javascript" src="js/vendors/angular-strap/angular-strap.tpl.js"></script>
+
+        <!-- External Javascript Libraries -->
+        <script type="text/javascript" src="js/vendors/d3/d3.js"></script>
+
+        <!-- Custom Javascript -->
+        <script src="js/app.js"></script>
+        <script src="js/constants.js"></script>
+
+        <!-- services -->
+        <script src="js/services/restApi.js"></script>
+        <script src="js/services/restApiHelper.js"></script>
+         
+        <!-- directives -->
+
+        <!-- controllers -->
+        <script src="js/controllers/globalCtrl.js"></script>
+        <script src="js/controllers/landingViewCtrl.js"></script>
+
+    </body>
+</html>
